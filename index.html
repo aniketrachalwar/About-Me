@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Rachalwar | Entrepreneur</title>
+    
+    <!-- Tailwind CSS: A utility-first CSS framework for rapid UI development -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Using the 'Inter' font for a clean, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons: Used for email, phone, and social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Custom styles section */
+        
+        /* Sets the default font for the entire page to 'Inter' */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* A simple fade-in and slide-up animation for the main card when the page loads */
+        .card-enter {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: card-enter-animation 0.8s ease-out forwards;
+        }
+        @keyframes card-enter-animation {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<!-- Body with a subtle gradient background for a more dynamic look -->
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center min-h-screen p-4 sm:p-6">
+
+    <!-- Main Profile Card Container -->
+    <!-- This div holds your entire profile card. It's responsive and uses flexbox on medium screens and up (md:flex) -->
+    <div class="card-enter w-full max-w-4xl bg-gray-800/50 backdrop-blur-sm rounded-2xl shadow-2xl shadow-cyan-500/20 overflow-hidden md:flex mb-8">
+        
+        <!-- Left Side: Contains your photo, name, and title -->
+        <div class="md:w-1/3 bg-gray-900 p-8 flex flex-col items-center justify-center text-center">
+            <!-- YOUR PHOTO: Replace the src if you want to use a different image -->
+            <img 
+                src="My photo.jpg" 
+                alt="Mr. Aniket Rachalwar" 
+                class="w-40 h-40 rounded-full object-cover border-4 border-cyan-400 shadow-lg mb-4"
+                onerror="this.onerror=null;this.src='https://placehold.co/160x160/111827/FFFFFF?text=A+R';"
+            >
+            <!-- YOUR NAME: You can change this text -->
+            <h1 class="text-2xl font-bold text-white">Mr. Aniket Rachalwar</h1>
+            <!-- YOUR TITLE/ROLE: You can change this text -->
+            <p class="text-cyan-400 font-medium mt-1">Entrepreneur</p>
+        </div>
+
+        <!-- Right Side: Contains all your textual information -->
+        <div class="md:w-2/3 p-8">
+            <!-- ABOUT ME SECTION -->
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold text-cyan-400 border-b-2 border-cyan-400/30 pb-2 mb-4">About Me</h2>
+                <!-- YOUR BIO: Edit the text inside the <p> tag to change your bio -->
+                <p class="text-gray-300 leading-relaxed">
+                    I am a passionate entrepreneur and the founder of <strong class="font-semibold text-white">Global Trade</strong>, an import-export business launched in 2025. My venture is proudly associated with the Government of India's flagship initiatives, <strong class="font-semibold text-white">Startup India</strong> and <strong class="font-semibold text-white">Standup India</strong>, aiming to contribute to the nation's economic growth and global presence.
+                </p>
+            </div>
+
+            <!-- PROFESSIONAL QUOTE SECTION -->
+            <div class="mb-6">
+                 <h3 class="text-lg font-semibold text-cyan-400 mb-3">Professional Quote</h3>
+                 <!-- YOUR QUOTE: Change the text inside the <blockquote> tag -->
+                 <blockquote class="text-gray-400 italic border-l-4 border-cyan-500 pl-4">
+                    "Building bridges for global commerce, one successful trade at a time."
+                </blockquote>
+            </div>
+
+            <!-- CONTACT INFORMATION SECTION -->
+            <div>
+                <h3 class="text-lg font-semibold text-cyan-400 mb-4">Get in Touch</h3>
+                <div class="space-y-3">
+                    <!-- YOUR EMAIL: Change the href="mailto:..." and the text to your email -->
+                    <a href="mailto:aniketrachalwar@outlook.com" class="flex items-center text-gray-300 hover:text-cyan-400 transition-colors duration-300">
+                        <i class="fas fa-envelope w-6 text-center mr-3"></i>
+                        <span>aniketrachalwar@outlook.com</span>
+                    </a>
+                    <!-- YOUR PHONE NUMBER: Change the href="tel:..." and the text to your phone number -->
+                    <a href="tel:+919158966502" class="flex items-center text-gray-300 hover:text-cyan-400 transition-colors duration-300">
+                        <i class="fas fa-phone w-6 text-center mr-3"></i>
+                        <span>+91 91589 66502</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SOCIAL MEDIA LINKS SECTION -->
+            <div class="mt-8">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-4">Follow Me</h3>
+                <!-- Social Icons Container - Reordered by Popularity -->
+                <div class="flex flex-wrap gap-4">
+                    <!-- CUSTOMIZE SOCIAL LINKS: Replace the '#' in href="#" with your actual profile URLs -->
+                    <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-blue-600 transition-colors duration-300 text-2xl transform hover:scale-110">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube" class="text-gray-400 hover:text-red-600 transition-colors duration-300 text-2xl transform hover:scale-110">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <!-- WHATSAPP LINK: This now redirects to a chat with your number -->
+                    <a href="https://wa.me/919158966502" aria-label="WhatsApp" class="text-gray-400 hover:text-green-500 transition-colors duration-300 text-2xl transform hover:scale-110">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-pink-500 transition-colors duration-300 text-2xl transform hover:scale-110">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="TikTok" class="text-gray-400 hover:text-white transition-colors duration-300 text-2xl transform hover:scale-110">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" aria-label="Telegram" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-2xl transform hover:scale-110">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-blue-500 transition-colors duration-300 text-2xl transform hover:scale-110">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" aria-label="Snapchat" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300 text-2xl transform hover:scale-110">
+                        <i class="fab fa-snapchat"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-sky-500 transition-colors duration-300 text-2xl transform hover:scale-110">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="GitHub" class="text-gray-400 hover:text-gray-200 transition-colors duration-300 text-2xl transform hover:scale-110">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- COPYRIGHT INFORMATION -->
+    <footer class="text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Aniket Rachalwar. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
